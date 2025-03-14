@@ -1,0 +1,45 @@
+.admin__flex {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 90vh;
+	overflow: hidden;
+}
+
+.admin__bg {
+	position: absolute;
+	content: '';
+	background: url('./static/bg-admin.png') no-repeat;
+	background-size: contain;
+	inset: 0;
+	z-index: -1;
+	opacity: 0.8;
+	animation: admin-bg 30s infinite;
+}
+
+.admin__flex button {
+	font-size: 1.5rem;
+	margin: calc(var(--index));
+	width: 50%;
+}
+
+.admin__button__strong {
+	padding-inline: calc(var(--index));
+	color: #cba83f;
+	font-size: 1.7rem;
+}
+
+@keyframes admin-bg {
+	0% {
+		transform: translateX(0);
+	}
+
+	50% {
+		transform: translateX(50%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}

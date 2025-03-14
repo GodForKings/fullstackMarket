@@ -1,0 +1,148 @@
+.content__box {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: fit-content;
+}
+
+.basket__container {
+	margin: 5vh 10vw;
+	width: clamp(800px, 80vw, 80vw);
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	display: flex;
+	padding: 50px;
+	border-radius: 15px;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: 50px;
+	box-shadow: var(--blackShadow);
+}
+
+.basket__item {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 350px;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+}
+
+.basket__item img {
+	width: 100%;
+	max-height: 100%;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.basket__item span {
+	font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.basket__counter {
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-inline: calc(var(--index));
+}
+
+.basket__counter button {
+	height: 90px;
+	width: 90px;
+	font-size: 3rem;
+	background: var(--black-sh);
+	border: none;
+	box-shadow: 0px 1px 2px 0px rgba(12, 120, 50, 0.9),
+		1px 2px 4px 0px rgba(12, 120, 50, 0.8),
+		2px 4px 8px 0px rgba(9, 106, 43, 0.7),
+		2px 4px 16px 4px rgba(10, 109, 45, 0.6);
+	transition: box-shadow 1s ease;
+}
+
+.basket__counter button:disabled {
+	background: rgba(89, 86, 86, 0.9);
+	color: var(--black-sh);
+	cursor: not-allowed;
+	opacity: 0.5;
+	box-shadow: var(--blackShadow);
+}
+
+.basket__counter span {
+	width: fit-content;
+	padding-inline: 30px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-block: 1px solid white;
+}
+
+.basket__counter button:first-child {
+	border-radius: 50% 0 0 50%;
+}
+
+.basket__counter button:last-child {
+	border-radius: 0 50% 50% 0;
+}
+.basket__price {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.basket__priceDelete {
+	background: transparent;
+	width: 3rem;
+	height: 3rem;
+	background-image: url('./static/delete.svg');
+	background-size: contain;
+}
+.finalPrice {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 40px 10px 0 0;
+	padding: 1rem;
+	font-size: 1.5rem;
+	position: fixed;
+	right: 5vw;
+	bottom: 0;
+	background: var(--black-sh);
+	gap: 20px;
+	box-shadow: 0px 1px 2px 0px rgba(12, 120, 50, 0.9),
+		1px 2px 4px 0px rgba(12, 120, 50, 0.8),
+		2px 4px 8px 0px rgba(9, 106, 43, 0.7),
+		2px 4px 16px 4px rgba(10, 109, 45, 0.6);
+}
+
+.finalPrice button {
+	letter-spacing: 1px;
+	font-weight: 100;
+	text-shadow: 0px 1px 2px rgba(12, 120, 50, 0.9);
+	font-size: 1rem;
+	color: rgba(12, 120, 50, 0.9);
+	margin-left: auto;
+	box-shadow: 0px 1px 2px 0px rgba(12, 120, 50, 0.9),
+		1px 2px 4px 0px rgba(12, 120, 50, 0.8),
+		2px 4px 8px 0px rgba(9, 106, 43, 0.7),
+		2px 4px 16px 4px rgba(10, 109, 45, 0.6);
+	border: rgba(12, 120, 50, 0.9);
+}
+.finalPrice button:hover {
+	background-color: rgba(12, 120, 50, 0.9);
+}
+
+.finalPrice button:disabled {
+	background: rgba(89, 86, 86, 0.3);
+	color: var(--based-white);
+	opacity: 0.3;
+	cursor: not-allowed;
+	box-shadow: none;
+}

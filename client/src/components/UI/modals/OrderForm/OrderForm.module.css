@@ -1,0 +1,82 @@
+.orderModal {
+	display: none;
+	position: fixed;
+	z-index: 5;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.orderModal.activeModal {
+	display: flex;
+	flex-direction: column;
+}
+
+.orderForm {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: clamp(400px, 80vw, 100%);
+	height: clamp(700px, 90vh, 100%);
+	background: linear-gradient(
+		180deg,
+		rgb(17, 17, 17),
+		rgb(33, 36, 33),
+		rgb(0, 0, 0)
+	);
+	border-radius: 0 0 3rem 1rem;
+	box-shadow: var(--whiteShadow);
+}
+
+.orderForm__inputs {
+	position: relative;
+	width: 300px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.orderForm__inputs .orderInputBx {
+	position: relative;
+	width: 100%;
+}
+.orderForm__inputs .orderInputBx input {
+	position: relative;
+	width: 100%;
+	padding: 12px 20px;
+	background: transparent;
+	border: solid 10px #0a0a0a;
+	border-radius: 40px;
+	font-size: 1.3rem;
+	color: #fff;
+	box-shadow: none;
+	outline: none;
+	transition: all 0.3s;
+}
+.orderForm__inputs .orderInputBx textarea {
+	position: relative;
+	width: 100%;
+	min-height: 200px;
+	padding: 12px 20px;
+	background: transparent;
+	color: #fff;
+	border: solid 10px #0a0a0a;
+	border-radius: 25px;
+	font-size: 1.3rem;
+	box-shadow: none;
+	outline: none;
+}
+.orderForm__inputs input:focus,
+.orderForm__inputs input:hover,
+.orderForm__inputs textarea:focus,
+.orderForm__inputs textarea:hover {
+	border: solid 10px #fff;
+}
+
+.orderForm__inputs h2 {
+	font-size: 1.5rem;
+}

@@ -1,0 +1,20 @@
+.device__grid {
+	padding: calc(var(--index) * 0.8);
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+	gap: var(--index);
+	opacity: 1;
+}
+
+@media (max-width: 1310px) {
+	.device__grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 800px) {
+	.device__grid {
+		grid-template-columns: 1fr;
+	}
+}

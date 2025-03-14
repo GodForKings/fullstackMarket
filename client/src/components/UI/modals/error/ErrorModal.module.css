@@ -1,0 +1,17 @@
+.error {
+	position: fixed;
+	bottom: 10%;
+	display: none;
+	background-color: var(--based-white);
+	color: var(--black-sh);
+	font-weight: 300;
+	font-size: 2rem;
+	padding: 10px;
+	border-radius: 20px;
+}
+
+.active {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

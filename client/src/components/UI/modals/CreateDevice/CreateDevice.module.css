@@ -1,0 +1,97 @@
+.createDevice {
+	position: fixed;
+	inset: 0 0 0 0;
+	display: none;
+	background: rgba(0, 0, 0, 0.9);
+	z-index: 10;
+}
+
+.createDevice__Content {
+	border-radius: 10px;
+	padding: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: #454237;
+	color: #fff;
+	width: calc(var(--index) * 50);
+	height: calc(var(--index) * 30);
+	overflow-y: auto;
+}
+
+.createDevice__form {
+	padding-block: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	width: 100%;
+	height: fit-content;
+	font-size: 1.5rem;
+}
+
+.createDevice__title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+}
+
+.createDevice__form select {
+	width: 80%;
+	height: 2.5rem;
+}
+
+.createDevice__form input {
+	width: 80%;
+	height: 2.5rem;
+	margin-block: 0.7rem;
+}
+
+.createDevice__form button {
+	width: calc(var(--index) * 10);
+	font-size: calc(var(--index) * 0.7);
+	margin: 0;
+}
+
+.createDevice.active {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.createDescription {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: nowrap;
+	width: 100%;
+}
+.desc__title {
+	width: 30%;
+}
+.desc__info {
+	width: 60%;
+	font-size: 1rem;
+}
+
+.createDescription button {
+	width: 100px;
+}
+
+.createDevice__bot {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.createDevice__bot button:first-child {
+	color: green;
+	border: 1px solid green;
+}
+
+.createDevice__bot button:last-child {
+	color: red;
+	border: 1px solid red;
+}

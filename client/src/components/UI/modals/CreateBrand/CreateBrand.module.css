@@ -1,0 +1,63 @@
+.createBrand {
+	position: fixed;
+	inset: 0 0 0 0;
+	display: none;
+	background: rgba(0, 0, 0, 0.9);
+	z-index: 10;
+}
+
+.createBrand__Content {
+	border-radius: 10px;
+	padding: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: #454237;
+	color: #fff;
+	width: calc(var(--index) * 50);
+	height: calc(var(--index) * 20);
+}
+
+.createBrand__title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3rem;
+}
+
+.createBrand__form {
+	padding-block: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.createBrand__form input {
+	width: 80%;
+	height: 3rem;
+	font-size: 2rem;
+}
+
+.createBrand.active {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.createBrand__bot {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.createBrand__bot button:first-child {
+	color: green;
+	border: 1px solid green;
+}
+
+.createBrand__bot button:last-child {
+	color: red;
+	border: 1px solid red;
+}

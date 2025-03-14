@@ -1,0 +1,47 @@
+.shop__flex {
+	position: relative;
+	display: flex;
+	flex-wrap: nowrap;
+	min-height: 90vh;
+	width: 100%;
+}
+
+.shop__flex::after {
+	position: absolute;
+	content: '';
+	background: url('./static/bg-main.png') no-repeat;
+	background-size: contain;
+	opacity: 0.8;
+	inset: 0;
+	z-index: -2;
+}
+
+.shop__flex::before {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	inset: 0;
+	background: url('./static/bg-dr.png') no-repeat center center;
+	background-size: contain;
+}
+
+.shop__assortment {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+@keyframes bg-animate {
+	0% {
+		transform: scale(0.7) rotate(0deg);
+		filter: blur(0px);
+	}
+	50% {
+		transform: scale(1) rotate(20deg);
+		filter: blur(3px);
+	}
+	100% {
+		transform: scale(0.7) rotate(0deg);
+		filter: blur(0px);
+	}
+}

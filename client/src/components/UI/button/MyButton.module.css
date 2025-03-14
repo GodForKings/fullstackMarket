@@ -1,0 +1,26 @@
+.myButton {
+	padding: 5px 15px;
+	color: var(--based-white);
+	background: transparent;
+	border: 1px solid var(--based-white);
+	transition: all 0.2s ease;
+	border-radius: 15px;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (hover: hover) {
+	.myButton:hover {
+		background-color: var(--based-white);
+		color: var(--black-sh);
+	}
+}
+
+@media (hover: none) {
+	.myButton:active {
+		background-color: var(--based-white);
+		color: var(--black-sh);
+	}
+}

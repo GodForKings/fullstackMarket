@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root {
+	--index: calc(1vw + 1vh);
+	--based-white: #ffffff;
+	--black-sh: rgba(0, 0, 0, 0.9);
+	--blurWhite: rgba(255, 255, 255, 0.7);
+	--blackShadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.6),
+		1px 2px 4px 0px rgba(0, 0, 0, 0.6), 2px 4px 8px 0px rgba(0, 0, 0, 0.6),
+		2px 4px 16px 0px rgba(0, 0, 0, 0.6), 0px -1px 2px 0px rgba(0, 0, 0, 0.6),
+		-1px -2px 4px 0px rgba(0, 0, 0, 0.6), -2px -4px 8px 0px rgba(0, 0, 0, 0.6),
+		-2px -4px 16px 0px rgba(0, 0, 0, 0.6);
+	--whiteShadow: 0px 1px 2px 0px rgba(255, 255, 255, 0.7),
+		1px 2px 4px 0px rgba(255, 255, 255, 0.7),
+		-2px -4px 8px 0px rgba(255, 255, 255, 0.7),
+		-2px -4px 16px 0px rgba(255, 255, 255, 0.7);
+	--insetBlackShadow: 0px 1px 2px 0px rgba(0, 0, 0, 1) inset,
+		1px 2px 4px 0px rgba(0, 0, 0, 1) inset,
+		2px 4px 8px 0px rgba(0, 0, 0, 1) inset,
+		2px 4px 16px 0px rgba(0, 0, 0, 1) inset,
+		0px -1px 2px 0px rgba(0, 0, 0, 1) inset;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	/* outline: 5px solid green !important; */
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: linear-gradient(to right, #434343 0%, black 100%);
+	color: #fff;
+	position: relative;
+	font-family: 'Oswald', serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	position: relative;
+	min-height: 100vh;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	padding: 0;
+	margin: 0;
+}
+
+dl,
+dt,
+dd {
+	margin: 0;
+	padding: 0;
+}
+button {
+	border: none;
+}
+video {
+	margin: 0;
+	padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background-color: #f5f5f5;
+}
+::-webkit-scrollbar {
+	width: 7px;
+	background-color: #f5f5f5;
+}
+::-webkit-scrollbar-thumb {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background-image: linear-gradient(
+		180deg,
+		#000 14%,
+		rgba(151, 156, 173, 0.8) 58%
+	);
+}
+
+.body__container {
+	padding-inline: 10vw;
+}
+
+@media (max-width: 900px) {
+	.body__container {
+		padding-inline: 2vw;
+	}
+}
+
+@media (max-width: 600px) {
+	.body__container {
+		padding-inline: 0vw;
+	}
+}

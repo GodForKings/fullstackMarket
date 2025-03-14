@@ -1,0 +1,54 @@
+.deleteDevice {
+	position: fixed;
+	inset: 0 0 0 0;
+	display: none;
+	background: rgba(0, 0, 0, 0.9);
+	z-index: 10;
+}
+
+.deleteDevice.active {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.info {
+	border-radius: 10px;
+	padding: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: #454237;
+	color: #fff;
+	width: calc(var(--index) * 40);
+	height: calc(var(--index) * 20);
+}
+
+.info__title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.info select {
+	width: 60%;
+	height: 2.5rem;
+	font-size: 1.3rem;
+}
+
+.info__btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.info__btn button:first-child {
+	color: green;
+	border: 1px solid green;
+}
+
+.info__btn button:last-child {
+	color: red;
+	border: 1px solid red;
+}

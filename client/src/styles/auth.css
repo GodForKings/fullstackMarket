@@ -1,0 +1,120 @@
+.auth__flex {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 700px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.auth__card {
+	position: relative;
+	width: 500px;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.auth__card i {
+	position: absolute;
+	inset: 0;
+	border: 2px solid var(--based-white);
+	transition: 0.5s;
+}
+
+.auth__card i:nth-child(1) {
+	border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+	animation: animate 6s linear infinite;
+}
+.auth__card i:nth-child(2) {
+	border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+	animation: animate 4s linear infinite;
+}
+.auth__card i:nth-child(3) {
+	border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+	animation: animate2 10s linear infinite;
+}
+
+.auth__card:hover i {
+	border: 6px solid var(--clr);
+	filter: drop-shadow(0 0 30px var(--clr));
+}
+
+.auth__card:focus i {
+	border: 6px solid var(--clr);
+	filter: drop-shadow(0 0 30px var(--clr));
+}
+@keyframes animate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes animate2 {
+	0% {
+		transform: rotate(360deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+.auth__card h2 {
+	font-weight: 200;
+	font-size: 3rem;
+	color: #fff;
+}
+
+.auth__card__form {
+	position: absolute;
+	width: 300px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.auth__card__form .auth__inputBx {
+	position: relative;
+	width: 100%;
+}
+
+.auth__card__form .auth__inputBx input {
+	position: relative;
+	width: 100%;
+	padding: 12px 20px;
+	background: transparent;
+	border: 2px solid #fff;
+	border-radius: 40px;
+	font-size: 1.2em;
+	color: #fff;
+	box-shadow: none;
+	outline: none;
+}
+
+.auth__card__alt {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-block: 1rem;
+	width: 90%;
+}
+
+.auth__card__alt span {
+	font-size: 1.1rem;
+}
+
+.auth__card__alt span a {
+	color: #cba83f;
+	transition: 0.1s ease;
+}
+
+.auth__card__alt span a:hover {
+	text-decoration: underline;
+}
